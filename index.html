@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>音乐播放器</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="DemoMusic">
+			<!--音乐列表-->
+			<div class="DemoMusic-top">
+				<div class="FontWite">
+					<div>歌名</div>
+					<div>作者</div>
+					<div>试听</div>
+					<div>音乐路径</div>
+				</div>
+				<div class="FontDivHover">
+					<div class="MusicNmae">Parallel World</div>
+					<div>那哥们</div>
+					<div class="Auditions gray">
+						<img src="img/mp1.png" alt="..."/>
+					</div>
+					<div class="MusicUrl">
+						<input type="text"  value="http://car.icehot.cc/aa.mp3" />
+					</div>
+				</div>
+				<div class="FontDivHover">
+					<div class="MusicNmae">北极光</div>
+					<div>那哥们</div>
+					<div class="Auditions gray">
+						<img src="img/mp1.png" alt="..."/>
+					</div>
+					<div class="MusicUrl">
+						<input type="text"  value="mp3/北极光.mp3" />
+					</div>
+				</div>
+				<div class="FontDivHover">
+					<div class="MusicNmae">Parallel World</div>
+					<div>那哥们</div>
+					<div class="Auditions gray">
+						<img src="img/mp1.png" alt="..."/>
+					</div>
+					<div class="MusicUrl">
+						<input type="text"  value="mp3/Parallel World.mp3" />
+					</div>
+				</div>
+			</div>
+			<div class="hide">
+				<div>
+					隐藏audio
+				</div>
+				<input type="hidden" class="HiddenDiv" />
+				<!--<audio src="mp3/Parallel World.mp3" controls="controls" preload id="music1" Volume="0">-->
+				<audio src="http://car.icehot.cc/aa.mp3" controls="controls" preload id="music1" Volume="0">
+			</div>
+			<!--音乐播放器-->
+			<div class="DemoMusic-bot zhankai">
+				<div class="DemoMusicBot-left">
+					<img src="img/133130.png" alt="..."/>
+				</div>
+				<div class="DemoMusicBot-cent">
+					<div>
+						<div class="Music-left">
+							<div class="FiratMenu">
+								<img src="img/856.png" alt="..."/>
+							</div>
+							<div class="StartMenu end">
+								<img src="img/911.png" alt="..."/>
+							</div>
+							<div class="EndingMenu">
+								<img src="img/43.png" alt="..."/>
+							</div>
+							<div class="OpenSound">
+								<img src="img/82114.png" alt="..."/>
+							</div>
+							<div class="YinL">
+								<input type="range" min="1" max="100" id="yinliang"/>
+							</div>
+							<div class="CloseSound">
+								<img src="img/hgh5.png" alt="..."/>
+							</div>
+						</div>
+						<div class="Music-right">
+							<div class="MusicSoun-left">
+								<img src="img/3431575794705764.jpg" alt="..."/>
+							</div>
+							<div class="MusicSoun-cent">
+								<div class="MusicSoun-top">
+									2.雅俗共赏
+								</div>
+								<div class="MusicSoun-center">
+									<input type="range" min="1" max="100" id="DemoYinliang"/>
+								</div>
+								<div class="MusicSoun-bot">
+									<div class="Soun-left">
+										0:00
+									</div>
+									<div class="Soun-left2 hide">
+										0:00
+									</div>
+									<div class="Soun-right">
+										4:37
+									</div>
+								</div>
+							</div>
+							<div class="MusicSoun-right" title="重新播放">
+								<img src="img/558.png" alt="..."/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="DemoMusicBot-right">
+					<img src="img/21.png" alt="..." />
+				</div>
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
